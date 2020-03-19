@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>"Bubblesort"</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bubble.css">
+</head>
+
+<body>
+  <header>
+    <button type="button" class="headerbuttons">Register</button>
+    <button type="button" class="headerbuttons">Login</button>
+  </header>
+  <nav class="main-navigation">
+    <ul class=menu>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li class="menu-item-has-children"><a href="#">Graphs</a>
+        <ul class="sub-menu">
+          <li><a href="#">Travelling salesman</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children"><a href="#">Puzzels</a>
+        <ul clas="sub-menu">
+          <li><a href="#">Towers of Hanoi</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children"><a href="#">Sorting algorithms</a>
+        <ul class="sub-menu">
+          <li><a href="bubblesort.html">Bubble sort</a></li>
+          <li><a href="#">Insertion sort</a></li>
+          <li><a href="#">Linear sort</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <label for="minValue" class="bubbleinput">Minimum value:</label><br>
+    <input type="text" class="bubbleinput" id="minValue" name="minValue"><br>
+    <label for="maxValue" class="bubbleinput">Maximum value:</label><br>
+    <input type="text" class="bubbleinput" id="maxValue" name="maxValue"><br>
+    <label for="numberOfElements" class="bubbleinput">No. of elements in array:</label><br>
+    <input type="text" class="bubbleinput" id="numberOfElements" name="numberOfElements"><br>
+    <input class="submit" type="submit" id="submitArray" name="submitArray" value=Submit>
+    <h2 id="headerUnsorted"></h2>
+    <ul class="bubble" id="unsortedArray">
+    </ul>
+    <h2 class="bubble" id=compare></h2>
+    <ul class="bubble" id=comparelist>
+    </ul>
+    <h2 class="bubble" id="headersorted"></h2>
+    <ul class="bubble" id="sortedArray">
+    </ul>
+  </main>
+
+  <footer>
+    <p>Multi Medie Designer</p>
+    <p>EASV2020</p>
+  </footer>
+  <script src="bubble.js"></script>
+</body>
+
+</html>
